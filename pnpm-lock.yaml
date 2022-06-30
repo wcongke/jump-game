@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@babylonjs/core': ^5.13.0
   '@vitejs/plugin-vue': ^2.3.3
   typescript: ^4.5.4
   vite: ^2.9.9
@@ -8,6 +9,7 @@ specifiers:
   vue-tsc: ^0.34.7
 
 dependencies:
+  '@babylonjs/core': 5.13.0
   vue: 3.2.37
 
 devDependencies:
@@ -35,6 +37,12 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.18.6
       to-fast-properties: 2.0.0
+
+  /@babylonjs/core/5.13.0:
+    resolution: {integrity: sha512-yxmjWNdtHuOdd99RIQ46Nki6Bk1a80YFtv+IL87scD+ktqBjO3xtEBzwV9li25tDDoqbUBeaGNc0cBbXr3TRqg==}
+    dependencies:
+      tslib: 2.4.0
+    dev: false
 
   /@vitejs/plugin-vue/2.3.3_vite@2.9.13+vue@3.2.37:
     resolution: {integrity: sha512-SmQLDyhz+6lGJhPELsBdzXGc+AcaT8stgkbiTFGpXPe8Tl1tJaBw1A6pxDqDuRsVkD8uscrkx3hA7QDOoKYtyw==}
@@ -450,6 +458,10 @@ packages:
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
+
+  /tslib/2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: false
 
   /typescript/4.7.4:
     resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
