@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host --open",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "f2elint-scan": "f2elint scan",

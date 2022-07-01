@@ -37,5 +37,6 @@ body {
 .game-canvas {
   width: 100%;
   height: 100%;
+  outline: none;
 }
 </style>
