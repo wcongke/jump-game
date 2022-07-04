@@ -10,6 +10,7 @@ import {
   Color3,
 } from '@babylonjs/core';
 import { TableManager } from './table-manager';
+import { Role } from './role';
 
 function createScene(engine: Engine) {
   const scene = new Scene(engine);
@@ -41,8 +42,22 @@ function createScene(engine: Engine) {
 
   // 底座
   const tableManager = new TableManager(scene);
-  tableManager._createCube('cube1', -8, 0, 30);
-  tableManager._createCube('cube2', -8, 0, -15);
+  tableManager._createCube('cube1', -8, 0, 25);
+  tableManager._createCube('cube2', -8, 0, -20);
+
+  // 角色
+  const role = new Role(scene);
+  role.reset();
+
+  document.addEventListener('pointerdown', (e) => {
+    e.preventDefault();
+    role.press();
+  });
+
+  document.addEventListener('pointerup', (e) => {
+    e.preventDefault();
+    role.release(new Vector3());
+  });
 
   return scene;
 }
